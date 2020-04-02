@@ -114,7 +114,7 @@ const CardOwnersPage = ({ match }) => {
   return (
     <div className="container bg-muted p-4">
       <Link to="/" className="text-decoration-none">
-        <h2 className="page-title">
+        <h2 className="page-title text-dark">
           <i className="fas fa-chevron-left mr-1"></i> Home
         </h2>
       </Link>
