@@ -17,7 +17,7 @@ const CardOwnersPage = ({ match }) => {
   };
 
   const carDataContainer = () => (
-    <div className="row pt-2">
+    <div className="row pt-2 justify-content-center">
       {carOwners.map(carOwner => (
         <div key={carOwner.id} className="col-7 col-md-7 col-lg-7 mb-2">
           <div className="card mb-3 border-0">
