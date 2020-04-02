@@ -90,7 +90,7 @@ const HomePage = () => {
         filtersContainer()
       )}
 
-      {!loading && filters.length ? (
+      {!loading && !filters.length ? (
         <div className="text-muted text-center">
           <h3>No Data</h3>
         </div>
