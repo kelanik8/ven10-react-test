@@ -93,8 +93,8 @@ const CardOwnersPage = ({ match }) => {
                     <span className="text-dark">{carOwner.email}</span>
                   </p>
                   <div className="row">
-                    <span className="col-1 text-muted">Bio: </span>
-                    <span className="col-11 text-truncate text-dark">
+                    <span className="col-2 text-muted">Bio: </span>
+                    <span className="col-10 text-truncate text-dark">
                       {carOwner.bio}
                     </span>
                   </div>
