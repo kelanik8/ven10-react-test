@@ -21,9 +21,9 @@ const HomePage = () => {
   }, []);
 
   const filtersContainer = () => (
-    <div className="row pt-2">
+    <div className="row pt-2 justify-content-center">
       {filters.map(filter => (
-        <div key={filter.id} className="col-12 col-md-12 col-lg-12 mb-2">
+        <div key={filter.id} className="col-7 col-md-7 col-lg-7 mb-2">
           <Link
             to={`/filter/cars-owners/${filter.id}`}
             className="text-decoration-none"

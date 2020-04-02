@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import CarImage from "../../assets/car.png";
@@ -18,7 +19,7 @@ const CardOwnersPage = ({ match }) => {
   const carDataContainer = () => (
     <div className="row pt-2">
       {carOwners.map(carOwner => (
-        <div key={carOwner.id} className="col-12 col-md-12 col-lg-12 mb-2">
+        <div key={carOwner.id} className="col-7 col-md-7 col-lg-7 mb-2">
           <div className="card mb-3 border-0">
             <div className="row no-gutters">
               <div className="col-md-4">
@@ -112,6 +113,12 @@ const CardOwnersPage = ({ match }) => {
 
   return (
     <div className="container bg-muted p-4">
+      <Link to="/">
+        <h2 className="page-title">
+          <i className="fas fa-filter mr-1"></i> Home
+        </h2>
+      </Link>
+
       {loading ? (
         <Loader
           className="text-center"
